@@ -7,6 +7,5 @@ export function svg(fileName: string): string {
 
 export function fa(iconPath: string): string {
     return svg(path.resolve(__dirname,
-        '../../../node_modules/@fortawesome/fontawesome-free/svgs/', 
-        iconPath + '.svg'))
+        '../../../../@fortawesome/fontawesome-free/svgs/', iconPath + '.svg'))
 }
