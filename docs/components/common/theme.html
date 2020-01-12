@@ -1,0 +1,447 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LiTScript Template - Theming Guide</title>
+    <link rel="icon" type="image/icon" href="/images/favicon.png" />
+    <link rel="stylesheet" href="/css/main.css" />
+    
+    
+</head>
+<body>
+    
+    <div class="navbar">
+        <div class="navmenu">
+            
+    <a class="title enabled" href="/">
+        <img src="/images/bulb.svg" />
+        <span>LiTScript Template</span>
+    </a>
+    <a class="enabled" href="https://www.npmjs.com/package/lits-template">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M288 288h-32v-64h32v64zm288-128v192H288v32H160v-32H0V160h576zm-416 32H32v128h64v-96h32v96h32V192zm160 0H192v160h64v-32h64V192zm224 0H352v128h64v-96h32v96h32v-96h32v96h32V192z"/></svg>
+        <span>Download</span>
+    </a>
+    <a class="enabled" href="https://github.com/johtela/lits-template">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+        <span>GitHub</span>
+    </a>
+    <a class="enabled" href="/license.html">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zM64 72c0-4.42 3.58-8 8-8h80c4.42 0 8 3.58 8 8v16c0 4.42-3.58 8-8 8H72c-4.42 0-8-3.58-8-8V72zm0 64c0-4.42 3.58-8 8-8h80c4.42 0 8 3.58 8 8v16c0 4.42-3.58 8-8 8H72c-4.42 0-8-3.58-8-8v-16zm192.81 248H304c8.84 0 16 7.16 16 16s-7.16 16-16 16h-47.19c-16.45 0-31.27-9.14-38.64-23.86-2.95-5.92-8.09-6.52-10.17-6.52s-7.22.59-10.02 6.19l-7.67 15.34a15.986 15.986 0 0 1-14.31 8.84c-.38 0-.75-.02-1.14-.05-6.45-.45-12-4.75-14.03-10.89L144 354.59l-10.61 31.88c-5.89 17.66-22.38 29.53-41 29.53H80c-8.84 0-16-7.16-16-16s7.16-16 16-16h12.39c4.83 0 9.11-3.08 10.64-7.66l18.19-54.64c3.3-9.81 12.44-16.41 22.78-16.41s19.48 6.59 22.77 16.41l13.88 41.64c19.77-16.19 54.05-9.7 66 14.16 2.02 4.06 5.96 6.5 10.16 6.5zM377 105L279.1 7c-4.5-4.5-10.6-7-17-7H256v128h128v-6.1c0-6.3-2.5-12.4-7-16.9z"/></svg>
+        <span>License</span>
+    </a>
+    <a class="enabled" href="/src/toc.html">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M223.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L319.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L393.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34zm-192 34l136 136c9.4 9.4 24.6 9.4 33.9 0l22.6-22.6c9.4-9.4 9.4-24.6 0-33.9L127.9 256l96.4-96.4c9.4-9.4 9.4-24.6 0-33.9L201.7 103c-9.4-9.4-24.6-9.4-33.9 0l-136 136c-9.5 9.4-9.5 24.6-.1 34z"/></svg>
+        <span>Previous: Table of Contents</span>
+    </a>
+    <a class="enabled" href="/license.html">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34zm192-34l-136-136c-9.4-9.4-24.6-9.4-33.9 0l-22.6 22.6c-9.4 9.4-9.4 24.6 0 33.9l96.4 96.4-96.4 96.4c-9.4 9.4-9.4 24.6 0 33.9l22.6 22.6c9.4 9.4 24.6 9.4 33.9 0l136-136c9.4-9.2 9.4-24.4 0-33.8z"/></svg>
+        <span>Next: License</span>
+    </a>
+        </div>
+        
+    <a class="hamburger">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </a>
+    </div>
+    
+    <div class="layout">
+        <div class="sidepane collapsible">
+            
+    <div class="tocmenu">
+        <h3>Table of Contents</h3>
+        
+    <ul>
+        
+    <li>
+        
+        <a href="/index.html">LiTScript Templates </a>
+        
+    </li>
+    <li>
+        
+        <a href="/src/template.html">Template API </a>
+        
+    </li>
+    <li>
+        
+        <a href="/src/front-matter.html">Front Matter </a>
+        
+    </li>
+    <li>
+        
+        <a href="/src/toc.html">Table of Contents </a>
+        
+    </li>
+    <li>
+        
+        <a href="/components/common/theme.html" class="highlight">Theming Guide </a>
+        
+    </li>
+    <li>
+        
+        <a href="/license.html">License </a>
+        
+    </li>
+    </ul>
+    </div>
+            
+    <div class="footer">
+        Copyright © 2019 Tommi Johtela
+        <div class="ad">
+            Created with <a href="https://github.com/johtela/literatets">LiTScript</a>
+        </div>
+    </div>
+
+        </div>
+        <div class="sideicon collapsible">
+            
+    <a class="hamburger">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </a>
+        </div>
+        <div class="scrollingarea closepopups">
+            
+    <div class="contentarea">
+        <h1 id="theming-guide">Theming Guide</h1>
+<p>Most of the visual attributes in the default template can be changed through
+Less variables defined in this file. You can override these variables in your
+own projects by creating a <a href="/src/front-matter.html#customizing-theme">user theme</a> file and redefining some or
+even all of them in that file. This way you can customize the appearance of
+your documentation making it look unique.</p>
+<h2 id="font-settings">Font Settings</h2>
+<p>Having clear, legible fonts goes a long way making documentation readable and
+easy for eyes. The default template ensures that fonts look consistent for all
+users by downloading them from <a href="https://fonts.google.com/">Google Fonts</a>.</p>
+<p>Customizing fonts begins with selecting three font families from three specific
+categories: sans, serif, and mono. Sans font is used for titles and captions,
+serif font for main text, and mono font for code snippets. After selecting these
+in Google Fonts, copy the value of <code>family=</code> attribute in the URL provided
+and paste it as the value of the <code>@google-fonts</code> variable. Make sure that you
+include only weights and variants that are used.</p>
+<p>Last, you need to assign the font families to three variables defined below
+according to the category.</p>
+
+<pre class="syntaxhighlight"><code><span class="variable">@google-fonts:</span> <span class="string">"Nunito:400,600|Sanchez:400,400i|Cousine:400;700"</span>;
+<span class="variable">@sans-font:</span> <span class="string">"Nunito"</span>;
+<span class="variable">@serif-font:</span> <span class="string">"Sanchez"</span>;
+<span class="variable">@mono-font:</span> <span class="string">"Cousine"</span>;
+</code></pre>
+<p>Below are font samples for families used in the default template.</p>
+<h3 id="sans-font">Sans Font</h3>
+<div class="font-sample-sans">The quick brown fox jumps over the lazy dog</div>
+<div class="font-sample-sans"><b>The quick brown fox jumps over the lazy dog</b></div>
+<h3 id="serif-font">Serif Font</h3>
+<div class="font-sample-serif">The quick brown fox jumps over the lazy dog</div>
+<div class="font-sample-serif"><i>The quick brown fox jumps over the lazy dog</i></div>
+<h3 id="mono-font">Mono Font</h3>
+<div class="font-sample-mono">The quick brown fox jumps over the lazy dog</div>
+<div class="font-sample-mono"><b>The quick brown fox jumps over the lazy dog</b></div>
+<h2 id="color-scheme">Color Scheme</h2>
+<p>Another easy way to make your documentation look unique is to change the color
+scheme. The scheme employed by the default template uses two main colors as a
+basis, and calculates light and dark variants automatically.</p>
+<h3 id="primary-and-secondary-colors">Primary and Secondary Colors</h3>
+<p>The primary color is used as a background color for page elements such as
+menus and separators. It is typically somewhat muted color that isn't too
+glaring. The secondary color is used to highlight things, so it should be the
+brighter one. If the primary and secondary colors are at the opposite sides of
+the <a href="https://www.sessions.edu/color-calculator/">color wheel</a>, they usually look more pleasant to the eye.</p>
+
+<pre class="syntaxhighlight"><code><span class="variable">@color-shade-diff:</span> <span class="number">9%</span>;
+<span class="variable">@color-primary:</span> <span class="number">#d7ccc8</span>;
+<span class="variable">@color-primary-light:</span> lighten(<span class="variable">@color-primary</span>, <span class="variable">@color-shade-diff</span>);
+<span class="variable">@color-primary-dark:</span> darken(<span class="variable">@color-primary</span>, <span class="variable">@color-shade-diff</span>);
+<span class="variable">@color-secondary:</span> <span class="number">#ff9e80</span>;
+<span class="variable">@color-secondary-light:</span>lighten(<span class="variable">@color-secondary</span>, <span class="variable">@color-shade-diff</span>);
+<span class="variable">@color-secondary-dark:</span> darken(<span class="variable">@color-secondary</span>, <span class="variable">@color-shade-diff</span>);
+</code></pre>
+<blockquote>
+<p><strong>About lazy evaluation of Less variables</strong></p>
+<p>Note that you don't need to override all of the variables above to modify
+the color scheme. Since Less uses <a href="http://lesscss.org/features/#variables-feature-lazy-evaluation">lazy evaluation</a> to get the variable
+values, changing <code>@primary-color</code> or <code>@secondary-color</code> alone will cause the
+derived colors to be changed as well.</p>
+</blockquote>
+<p>Below are samples of the default primary and secondary colors.</p>
+<p><strong>Primary Colors</strong></p>
+<div class="color-samples">
+    <div class="primary-dark">Dark</div>
+    <div class="primary">Normal</div>
+    <div class="primary-light">Light</div>
+</div>
+<p><strong>Secondary Colors</strong></p>
+<div class="color-samples">
+    <div class="secondary-dark">Dark</div>
+    <div class="secondary">Normal</div>
+    <div class="secondary-light">Light</div>
+</div>
+<h3 id="text-and-background-colors">Text and Background Colors</h3>
+<p>The main part of the page contains your actual documentation, and it is colored
+traditionally in black and white. However, you can tweak how black or white
+by overriding the <code>@color-black</code> and <code>@color-white</code> variables. The default
+colors are pretty close to absolute black and white.</p>
+<p>When text is rendered on top of primary or secondary colors, we use either black
+or white color depending on the luminance of the background color.</p>
+
+<pre class="syntaxhighlight"><code><span class="variable">@bw-threshold:</span> <span class="number">50%</span>;
+<span class="variable">@color-black:</span> <span class="number">#112</span>;
+<span class="variable">@color-white:</span> <span class="number">#fffeff</span>;
+<span class="variable">@color-text:</span> if(luminance(<span class="variable">@color-primary</span>) &gt; <span class="variable">@bw-threshold</span>, <span class="variable">@color-black</span>, <span class="variable">@color-white</span>);
+<span class="variable">@color-text-light:</span> lighten(<span class="variable">@color-text</span>, <span class="variable">@color-shade-diff</span>);
+<span class="variable">@color-text-dark:</span> darken(<span class="variable">@color-text</span>, <span class="variable">@color-shade-diff</span>);
+<span class="variable">@color-secondary-text:</span> if(luminance(<span class="variable">@color-secondary</span>) &gt; <span class="variable">@bw-threshold</span>, <span class="variable">@color-black</span>, <span class="variable">@color-white</span>);
+<span class="variable">@color-secondary-text-light:</span> lighten(<span class="variable">@color-secondary-text</span>, <span class="variable">@color-shade-diff</span>);
+<span class="variable">@color-secondary-text-dark:</span> darken(<span class="variable">@color-secondary-text</span>, <span class="variable">@color-shade-diff</span>);
+</code></pre>
+<h2 id="navbar-styles">Navbar Styles</h2>
+<p>The first customizable UI element is the navigation bar, or <em>navbar</em> for short.
+It provides quick links to most important resources, and enables jumping to<br>
+previous and next page in the order specified in the <a href="/src/toc.html">TOC</a>.</p>
+<h3 id="vertical-alignment">Vertical Alignment</h3>
+<p>You can place navbar at the <code>top</code> or <code>bottom</code> of the screen. Any other value is
+invalid.</p>
+
+<pre class="syntaxhighlight"><code><span class="variable">@nav-align:</span> top;
+</code></pre>
+<h3 id="text-transform">Text Transform</h3>
+<p>The transformation applied to navbar captions. Here are the
+<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform">valid options</a>.</p>
+
+<pre class="syntaxhighlight"><code><span class="variable">@nav-text-transform:</span> capitalize;
+</code></pre>
+<h3 id="padding-and-margin">Padding and Margin</h3>
+<p>Horizontal and vertical padding and margin of navbar buttons are stored in
+these variables. Padding controls how much empty space is added inside buttons
+and margin outside the buttons. Note that horizontal margin is not editable.
+Horizontal layout of buttons is controlled by the <code>@nav-button-justify</code>
+variable.</p>
+
+<pre class="syntaxhighlight"><code><span class="variable">@nav-horz-padding:</span> <span class="number">8px</span>;
+<span class="variable">@nav-vert-padding:</span> <span class="number">8px</span>;
+<span class="variable">@nav-vert-margin:</span> <span class="number">6px</span>;
+</code></pre>
+<h3 id="font-size">Font Size</h3>
+<p>Navbar uses the <code>@sans-font</code>. This is not changeable. Nevertheless, you can set
+the size of the font with the following variable.</p>
+
+<pre class="syntaxhighlight"><code><span class="variable">@nav-font-size:</span> <span class="number">15px</span>;
+</code></pre>
+<h3 id="button-shadows">Button Shadows</h3>
+<p>Offset and size of button shadows is set below. To turn off shadows, set both
+to zero.</p>
+
+<pre class="syntaxhighlight"><code><span class="variable">@nav-shadow-offset:</span> <span class="number">2px</span>;
+<span class="variable">@nav-shadow-size:</span> <span class="number">6px</span>;
+</code></pre>
+<h3 id="animation-speed">Animation Speed</h3>
+<p>The speed for animations is controlled by <code>@nav-transition</code> variable.</p>
+
+<pre class="syntaxhighlight"><code><span class="variable">@nav-transition:</span> <span class="number">0.3s</span>;
+</code></pre>
+<h3 id="button-justification-and-spacing">Button Justification and Spacing</h3>
+<p>Buttons are laid out using a <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox">flexbox</a>. You can change how buttons are
+justified inside the flexbox by editing the <code>@nav-button-justify</code> variable. Its
+valid values can be found <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content">here</a>.</p>
+<p>To increase or reduce space between buttons, change the <code>@nav-button-spacing</code>
+variable.</p>
+
+<pre class="syntaxhighlight"><code><span class="variable">@nav-button-justify:</span> flex-start;
+<span class="variable">@nav-button-spacing:</span> <span class="number">8px</span>;
+</code></pre>
+<h3 id="button-radius">Button Radius</h3>
+<p>To get rounded corners or pill-shaped buttons change the variable below. Using
+radius greater than button height will result in pill-shaped buttons.</p>
+
+<pre class="syntaxhighlight"><code><span class="variable">@nav-button-radius:</span> <span class="number">100px</span>;
+</code></pre>
+<h3 id="button-colors">Button Colors</h3>
+<p>The colors used in the buttons are listed below. There are separate background
+colors for normal and hover (<code>nav-hl-backgound</code>) state.</p>
+
+<pre class="syntaxhighlight"><code><span class="variable">@nav-border-color:</span> <span class="variable">@color-secondary-dark</span>;
+<span class="variable">@nav-text-color:</span> <span class="variable">@color-secondary-text-light</span>;
+<span class="variable">@nav-background:</span> <span class="variable">@color-secondary-light</span>;
+<span class="variable">@nav-hl-background:</span> <span class="variable">@color-secondary</span>;
+</code></pre>
+<h3 id="calculated-values">Calculated Values</h3>
+<p>The total height of the navbar and the size of the hamburger icon are calculated
+automatically. The only reason for changing the following variables is if the
+calculated sizes are not big enough for some reason.</p>
+
+<pre class="syntaxhighlight"><code><span class="variable">@nav-height:</span> <span class="variable">@nav-font-size</span> + (<span class="number">2</span> * <span class="variable">@nav-vert-margin</span>) + (<span class="variable">@nav-vert-padding</span> * <span class="number">2</span>) + <span class="variable">@nav-shadow-offset</span>;
+<span class="variable">@hamburger-size:</span> ceil(<span class="variable">@nav-font-size</span> / <span class="number">4</span>);
+</code></pre>
+<h2 id="toc-menu-styles">TOC Menu Styles</h2>
+<p>The table of contents is shown in a pane that is automatically hidden if the
+screen size is not big enough to show it. When it is hidden it can be opened
+using a hamburger icon.</p>
+<h3 id="horizontal-alignment">Horizontal Alignment</h3>
+<p>Whereas navbar can be aligned vertically to top or bottom, the TOC menu can be
+aligned horizontally to <code>left</code> or <code>right</code>. Any other value is invalid.</p>
+
+<pre class="syntaxhighlight"><code><span class="variable">@toc-align:</span> left;
+</code></pre>
+<h3 id="animation-speed-1">Animation Speed</h3>
+<p>The speed of animations can be changed with this variable.</p>
+
+<pre class="syntaxhighlight"><code><span class="variable">@toc-transition:</span> <span class="number">0.3s</span>;
+</code></pre>
+<h3 id="scrollbar-width">Scrollbar Width</h3>
+<p>TOC menu uses a custom narrow scrollbar (works only in Chrome). You can set its
+width with this variable.</p>
+
+<pre class="syntaxhighlight"><code><span class="variable">@toc-scrollbar-width:</span> <span class="number">4px</span>;
+</code></pre>
+<h3 id="font-sizes">Font Sizes</h3>
+<p>The sizes of the header and TOC items can be changed with following variables.</p>
+
+<pre class="syntaxhighlight"><code><span class="variable">@toc-header-font-size:</span> <span class="number">17px</span>;
+<span class="variable">@toc-font-size:</span> <span class="number">14px</span>;
+</code></pre>
+<h3 id="hamburger-radius">Hamburger Radius</h3>
+<p>The border radius of the hamburger icon can be changed with this variable. To
+keep a consistent look we use the same radius as for the navbar buttons by
+default.</p>
+
+<pre class="syntaxhighlight"><code><span class="variable">@toc-sideicon-radius:</span> <span class="variable">@nav-button-radius</span>;
+</code></pre>
+<h3 id="colors-and-transparency">Colors and Transparency</h3>
+<p>The colors of the TOC menu can be changed with variables below. <code>@toc-fadeout</code>
+controls the transparancy of the backgound color.</p>
+
+<pre class="syntaxhighlight"><code><span class="variable">@toc-fadeout:</span> <span class="number">4%</span>;
+<span class="variable">@toc-bg-color:</span> fadeout(<span class="variable">@color-primary-light</span>, <span class="variable">@toc-fadeout</span>);
+<span class="variable">@toc-text-color:</span> <span class="variable">@color-text-light</span>;
+<span class="variable">@toc-header-ruler-color:</span> <span class="variable">@color-secondary</span>;
+<span class="variable">@toc-link-hover-color:</span> <span class="variable">@color-secondary-light</span>;
+<span class="variable">@toc-sub-ruler-color:</span> <span class="variable">@color-primary</span>;
+<span class="variable">@toc-scrollbar-color:</span> <span class="variable">@color-secondary-light</span>;
+</code></pre>
+<h3 id="shadows">Shadows</h3>
+<p>The shadow settings can be also changed, but it is good idea to touch only the
+size and let the other values be calculated. Note that the alignment changes
+the shadow position as well.</p>
+
+<pre class="syntaxhighlight"><code><span class="variable">@toc-shadow-size:</span> <span class="number">3px</span>;
+<span class="variable">@toc-shadow-color:</span> darken(desaturate(<span class="variable">@toc-bg-color</span>, <span class="number">90%</span>), <span class="number">10%</span>);
+<span class="variable">@toc-shadow-x-offset:</span> if((<span class="variable">@toc-align</span>=left), <span class="variable">@toc-shadow-size</span>, -<span class="variable">@toc-shadow-size</span>);
+<span class="variable">@toc-shadow-y-offset:</span> if((<span class="variable">@nav-align</span>=bottom), <span class="variable">@toc-shadow-size</span>, -<span class="variable">@toc-shadow-size</span>);
+</code></pre>
+<h2 id="page-menu-styles">Page Menu Styles</h2>
+<p>Page menu provides navigation menu inside the current page. It is dynamically
+generated by collecting all the header tags in the page.</p>
+<h3 id="animation-speed-2">Animation Speed</h3>
+<p>As for other page elements the animation speed is controlled by transition
+variable.</p>
+
+<pre class="syntaxhighlight"><code><span class="variable">@pm-transition:</span> <span class="number">0.3s</span>;
+</code></pre>
+<h3 id="fonts">Fonts</h3>
+<p>Page menu uses the <code>@sans-font</code>. You can change the font sizes with these
+variables.</p>
+
+<pre class="syntaxhighlight"><code><span class="variable">@pm-header-font-size:</span> <span class="number">17px</span>;
+<span class="variable">@pm-font-size:</span> <span class="number">14px</span>;
+</code></pre>
+<h3 id="colors">Colors</h3>
+<p>The colors are defined with the following variables.</p>
+
+<pre class="syntaxhighlight"><code><span class="variable">@pm-bg-color:</span> <span class="variable">@cnt-bg-color</span>;
+<span class="variable">@pm-text-color:</span> <span class="variable">@cnt-color</span>;  
+<span class="variable">@pm-header-ruler-color:</span> <span class="variable">@color-secondary</span>;
+<span class="variable">@pm-link-hover-color:</span> <span class="variable">@color-secondary-light</span>;
+</code></pre>
+<h2 id="content-area-styles">Content Area Styles</h2>
+<p>The content area is where your actual documentation lives. A lot of styling
+are applied to it, but to keep things simple, only the most important ones are
+controlled by variables. If you wish to have completely different styling for
+the content area, I recommend writing a new template for that.</p>
+<h3 id="fonts-1">Fonts</h3>
+<p>Content area uses the <code>@serif-font</code> in main text, and <code>@sans-font</code> in headers.
+You can change these or font sizes with the variables below.</p>
+
+<pre class="syntaxhighlight"><code><span class="variable">@cnt-font:</span> <span class="variable">@serif-font</span>;
+<span class="variable">@cnt-header-font:</span> <span class="variable">@sans-font</span>;
+<span class="variable">@cnt-font-size:</span> <span class="number">16px</span>;
+<span class="variable">@cnt-mono-font-size:</span> <span class="number">15px</span>;
+</code></pre>
+<h3 id="colors-1">Colors</h3>
+<p>The <code>@cnt-color</code> is the &quot;black&quot; text color used and <code>@cnt-bg-color</code> is the
+background color.</p>
+
+<pre class="syntaxhighlight"><code><span class="variable">@cnt-color:</span> <span class="number">#333</span>;
+<span class="variable">@cnt-bg-color:</span> <span class="variable">@color-white</span>;
+</code></pre>
+<h2 id="footer-colors-and-font">Footer Colors and Font</h2>
+<p>Footer is a simple block of text that contains copyright message. You can
+change its color and font with these variables.</p>
+
+<pre class="syntaxhighlight"><code><span class="variable">@ftr-color:</span> <span class="variable">@color-text</span>;
+<span class="variable">@ftr-border-color:</span> <span class="variable">@color-primary</span>;
+<span class="variable">@ftr-font-family:</span> <span class="variable">@sans-font</span>;
+<span class="variable">@ftr-font-size:</span> <span class="number">14px</span>;
+</code></pre>
+<h2 id="tooltip-colors">Tooltip Colors</h2>
+<p>Tooltips are popping up in code blocks and menus. You can change their colors
+with following variables.</p>
+
+<pre class="syntaxhighlight"><code><span class="variable">@tooltip-color:</span> <span class="variable">@color-black</span>;
+<span class="variable">@tooltip-bg-color:</span> fadeout(<span class="variable">@color-secondary-light</span>, <span class="number">3%</span>);
+<span class="variable">@tooltip-border-color:</span> fadeout(<span class="variable">@color-secondary</span>, <span class="number">3%</span>);
+</code></pre>
+<h2 id="landing-page-styles">Landing Page Styles</h2>
+<p>A landing page has completely different layout than normal page. You can change
+the style of few elements in the landing page.</p>
+<h3 id="background">Background</h3>
+<p>The background of the landing page can either be a picture or solid color.</p>
+
+<pre class="syntaxhighlight"><code><span class="variable">@lnd-background:</span> <span class="variable">@color-primary</span>;
+<span class="variable">@lnd-background-attachment:</span> fixed;
+<span class="variable">@lnd-background-repeat:</span> no-repeat;
+</code></pre>
+<h3 id="title-text">Title Text</h3>
+<p>The title font size and color can be changed with following variables.</p>
+
+<pre class="syntaxhighlight"><code><span class="variable">@lnd-title-color:</span> <span class="variable">@color-text</span>;
+<span class="variable">@lnd-title-font-size:</span> <span class="number">11vw</span>;
+<span class="variable">@lnd-title-font-weight:</span> bold;
+</code></pre>
+<h3 id="info-boxes">Info Boxes</h3>
+<p>The boxes that contain information about the project can by styled with
+these variables.</p>
+
+<pre class="syntaxhighlight"><code><span class="variable">@lnd-info-background-color:</span> <span class="variable">@color-white</span>;
+<span class="variable">@lnd-info-text-color:</span> <span class="variable">@color-text</span>;
+</code></pre>
+<h2 id="overriding-variables">Overriding Variables</h2>
+<p>After we have initialized all the theme variables, we read the user specific
+theme file. The path to the user theme file is resolved by Webpack.</p>
+
+<pre class="syntaxhighlight"><code><span class="keyword">@import</span> <span class="string">"~userTheme"</span>;
+</code></pre>
+
+        
+    </div>
+            <div class="stickypane">
+                
+    <div class="pagemenu">
+        <h3>On This Page</h3>
+            <ul class="pagetree">
+                
+            </ul>
+    </div>
+                
+            </div>
+        </div>
+    </div>
+    <script src="/js/main.js"></script>
+    
+</body>
+</html>

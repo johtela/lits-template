@@ -1,0 +1,22 @@
+@import "./common/theme";
+@import "./common/samples";
+@import (css) url("https://fonts.googleapis.com/css?family=@{google-fonts}");
+
+// Reset margins and paddings
+html, body, ul, ol  {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+// Box-sizing on for everything
+* {
+    box-sizing: border-box;
+}
+
+body {
+    --sans-font: @sans-font;
+    --serif-font: @serif-font;
+    --mono-font: @mono-font;
+    font-family: @sans-font, sans-serif;
+}

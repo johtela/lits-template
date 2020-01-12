@@ -1,0 +1,257 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LiTScript Template - Front Matter</title>
+    <link rel="icon" type="image/icon" href="/images/favicon.png" />
+    <link rel="stylesheet" href="/css/main.css" />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.css">
+</head>
+<body>
+    
+    <div class="navbar">
+        <div class="navmenu">
+            
+    <a class="title enabled" href="/">
+        <img src="/images/bulb.svg" />
+        <span>LiTScript Template</span>
+    </a>
+    <a class="enabled" href="https://www.npmjs.com/package/lits-template">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M288 288h-32v-64h32v64zm288-128v192H288v32H160v-32H0V160h576zm-416 32H32v128h64v-96h32v96h32V192zm160 0H192v160h64v-32h64V192zm224 0H352v128h64v-96h32v96h32v-96h32v96h32V192z"/></svg>
+        <span>Download</span>
+    </a>
+    <a class="enabled" href="https://github.com/johtela/lits-template">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+        <span>GitHub</span>
+    </a>
+    <a class="enabled" href="/license.html">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zM64 72c0-4.42 3.58-8 8-8h80c4.42 0 8 3.58 8 8v16c0 4.42-3.58 8-8 8H72c-4.42 0-8-3.58-8-8V72zm0 64c0-4.42 3.58-8 8-8h80c4.42 0 8 3.58 8 8v16c0 4.42-3.58 8-8 8H72c-4.42 0-8-3.58-8-8v-16zm192.81 248H304c8.84 0 16 7.16 16 16s-7.16 16-16 16h-47.19c-16.45 0-31.27-9.14-38.64-23.86-2.95-5.92-8.09-6.52-10.17-6.52s-7.22.59-10.02 6.19l-7.67 15.34a15.986 15.986 0 0 1-14.31 8.84c-.38 0-.75-.02-1.14-.05-6.45-.45-12-4.75-14.03-10.89L144 354.59l-10.61 31.88c-5.89 17.66-22.38 29.53-41 29.53H80c-8.84 0-16-7.16-16-16s7.16-16 16-16h12.39c4.83 0 9.11-3.08 10.64-7.66l18.19-54.64c3.3-9.81 12.44-16.41 22.78-16.41s19.48 6.59 22.77 16.41l13.88 41.64c19.77-16.19 54.05-9.7 66 14.16 2.02 4.06 5.96 6.5 10.16 6.5zM377 105L279.1 7c-4.5-4.5-10.6-7-17-7H256v128h128v-6.1c0-6.3-2.5-12.4-7-16.9z"/></svg>
+        <span>License</span>
+    </a>
+    <a class="enabled" href="/src/template.html">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M223.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L319.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L393.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34zm-192 34l136 136c9.4 9.4 24.6 9.4 33.9 0l22.6-22.6c9.4-9.4 9.4-24.6 0-33.9L127.9 256l96.4-96.4c9.4-9.4 9.4-24.6 0-33.9L201.7 103c-9.4-9.4-24.6-9.4-33.9 0l-136 136c-9.5 9.4-9.5 24.6-.1 34z"/></svg>
+        <span>Previous: Template API</span>
+    </a>
+    <a class="enabled" href="/src/toc.html">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34zm192-34l-136-136c-9.4-9.4-24.6-9.4-33.9 0l-22.6 22.6c-9.4 9.4-9.4 24.6 0 33.9l96.4 96.4-96.4 96.4c-9.4 9.4-9.4 24.6 0 33.9l22.6 22.6c9.4 9.4 24.6 9.4 33.9 0l136-136c9.4-9.2 9.4-24.4 0-33.8z"/></svg>
+        <span>Next: Table of Contents</span>
+    </a>
+        </div>
+        
+    <a class="hamburger">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </a>
+    </div>
+    
+    <div class="layout">
+        <div class="sidepane collapsible">
+            
+    <div class="tocmenu">
+        <h3>Table of Contents</h3>
+        
+    <ul>
+        
+    <li>
+        
+        <a href="/index.html">LiTScript Templates </a>
+        
+    </li>
+    <li>
+        
+        <a href="/src/template.html">Template API </a>
+        
+    </li>
+    <li>
+        
+        <a href="/src/front-matter.html" class="highlight">Front Matter </a>
+        
+    </li>
+    <li>
+        
+        <a href="/src/toc.html">Table of Contents </a>
+        
+    </li>
+    <li>
+        
+        <a href="/components/common/theme.html">Theming Guide </a>
+        
+    </li>
+    <li>
+        
+        <a href="/license.html">License </a>
+        
+    </li>
+    </ul>
+    </div>
+            
+    <div class="footer">
+        Copyright © 2019 Tommi Johtela
+        <div class="ad">
+            Created with <a href="https://github.com/johtela/literatets">LiTScript</a>
+        </div>
+    </div>
+
+        </div>
+        <div class="sideicon collapsible">
+            
+    <a class="hamburger">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </a>
+        </div>
+        <div class="scrollingarea closepopups">
+            
+    <div class="contentarea">
+        
+<h1 id="front-matter">Front Matter</h1>
+<p>The settings used in generating HTML pages are defined in an interface called
+front matter. Users can edit the front matter by modifying the
+<code>litsconfig.json</code> file or by adding it in front of a source file. Below is
+an example showing how to include a front matter in a markdown file.</p>
+
+<pre class="syntaxhighlight"><code>---
+<span class="section">{ "useMath": true }
+---</span>
+</code></pre>
+<details>
+<summary>front-matter.ts imports</summary>
+<pre class="syntaxhighlight"><code><span class="keyword">import</span> <span class="punctuation">*</span> <span class="keyword">as</span> <span id="486" data-toggle="tooltip" data-title="typeof path">path</span> <span class="keyword">from</span> <span class="string">&#039;path&#039;</span>
+</code></pre>
+</details>
+<h2 id="generic-front-matter">Generic Front Matter</h2>
+<p>The minimum front matter that all templates must provide is defined using
+the <code>FrontMatter</code> interface. It contains only the list of visualizer
+modules referenced in the documentation.</p>
+<pre class="syntaxhighlight"><code><span class="keyword">export</span> <span class="keyword">interface</span> <span id="508" class="typename" data-toggle="tooltip" data-title="Visualizer">Visualizer</span> <span class="punctuation">{</span>
+    <span id="792" data-toggle="tooltip" data-title="string">path</span><span class="punctuation">:</span> <span class="keyword">string</span>
+    <span id="810" data-toggle="tooltip" data-title="boolean">includeStyles</span><span class="punctuation">:</span> <span class="keyword">boolean</span>
+<span class="punctuation">}</span>
+<span class="keyword">export</span> <span class="keyword">interface</span> <span id="841" class="typename" data-toggle="tooltip" data-title="FrontMatter">FrontMatter</span> <span class="punctuation">{</span>
+</code></pre>
+<h3 id="dynamic-code">Dynamic Code</h3>
+<p>To create interactive documentation pages you need to be able to call
+your code dynamically and show the results on the page. The <code>visualizers</code>
+setting contains the name of your root code file that is included in
+the generated HTML pages. The file path is relative to the project base
+directory.</p>
+<pre class="syntaxhighlight"><code>    <span id="873" data-toggle="tooltip" data-title="Visualizer[]">visualizers</span><span class="punctuation">:</span> <a href="/src/front-matter.html#508"><span class="typename" data-toggle="tooltip" data-title="Visualizer">Visualizer</span></a><span class="punctuation">[</span><span class="punctuation">]</span>
+<span class="punctuation">}</span>
+</code></pre>
+<h2 id="settings-provided-by-default-template">Settings Provided by Default Template</h2>
+<p>The default template extends the generic front matter in many ways. The
+specific properties are explained below.</p>
+<pre class="syntaxhighlight"><code><span class="keyword">export</span> <span class="keyword">interface</span> <span id="1297" class="typename" data-toggle="tooltip" data-title="DefaultFrontMatter">DefaultFrontMatter</span> <span class="keyword">extends</span> <a href="/src/front-matter.html#841"><span class="typename" data-toggle="tooltip" data-title="FrontMatter">FrontMatter</span></a> <span class="punctuation">{</span>
+</code></pre>
+<h3 id="used-template">Used Template</h3>
+<p>This theme contains two templates: one for &quot;normal&quot; pages and another
+for landing pages. &quot;Normal&quot; is the default.</p>
+<pre class="syntaxhighlight"><code>    <span id="1537" data-toggle="tooltip" data-title="&quot;normalpage&quot; | &quot;landingpage&quot;">template</span><span class="punctuation">:</span> <span class="string">&quot;normalpage&quot;</span> <span class="punctuation">|</span> <span class="string">&quot;landingpage&quot;</span>
+</code></pre>
+<h3 id="project-name">Project Name</h3>
+<p>The project name is displayed everywhere where a title is needed; in the
+navigation bar, in the page title (browser tab), and so on.</p>
+<pre class="syntaxhighlight"><code>    <span id="1764" data-toggle="tooltip" data-title="string">projectName</span><span class="punctuation">:</span> <span class="keyword">string</span>
+</code></pre>
+<h3 id="project-ur-ls">Project URLs</h3>
+<p>Following settings contain links used in the navigation bar. They can be
+absolute URLs to external web sites, or relative paths to pages in the
+project. If you use relative paths, always remember to add the <code>/</code>
+character at the front. The forward slash character points to the root
+of the generated web site.</p>
+<p>The repository field contains the URL of the git repo that hosts the
+project sources.</p>
+<pre class="syntaxhighlight"><code>    <span id="1991" data-toggle="tooltip" data-title="string">repository</span><span class="punctuation">:</span> <span class="keyword">string</span>
+</code></pre>
+<p>The download field contains the URL of the download site, typically NPM
+home page.</p>
+<pre class="syntaxhighlight"><code>    <span id="2532" data-toggle="tooltip" data-title="string">download</span><span class="punctuation">:</span> <span class="keyword">string</span>
+</code></pre>
+<p>The URL of the license info page.</p>
+<pre class="syntaxhighlight"><code>    <span id="2672" data-toggle="tooltip" data-title="string">license</span><span class="punctuation">:</span> <span class="keyword">string</span>
+</code></pre>
+<p>Link to the logo image used in the navigation bar. This should be an
+icon, a small bitmap, or a SVG file.</p>
+<pre class="syntaxhighlight"><code>    <span id="2753" data-toggle="tooltip" data-title="string">logo</span><span class="punctuation">:</span> <span class="keyword">string</span>
+</code></pre>
+<h3 id="syntax-highlighting">Syntax Highlighting</h3>
+<p>There are multiple syntax highlight schemes to choose from. These should
+be familiar from popular text editors.</p>
+<pre class="syntaxhighlight"><code>    <span id="2912" data-toggle="tooltip" data-title="&quot;coding-horror&quot; | &quot;monokai&quot; | &quot;solarized-light&quot; | &quot;son-of-obsidian&quot;">syntaxHighlight</span><span class="punctuation">:</span> <span class="string">&quot;coding-horror&quot;</span> <span class="punctuation">|</span> <span class="string">&quot;monokai&quot;</span> <span class="punctuation">|</span> <span class="string">&quot;solarized-light&quot;</span> <span class="punctuation">|</span> <span class="string">&quot;son-of-obsidian&quot;</span>
+</code></pre>
+<h3 id="math-notation">Math Notation</h3>
+<p>LiTScript uses <a href="https://katex.org/">KaTeX</a> to layout mathematical formulas. By turning the
+<code>useMath</code> field on, KaTeX is loaded from an external CDN.</p>
+<p>You can include formulas in markdown with <a href="https://en.wikibooks.org/wiki/LaTeX/Mathematics">LaTeX</a> notation by
+surrounding them by single <code>$</code> (inline) or double <code>$$</code> (block) dollar
+signs. For example the block</p>
+<pre><code>$$x = { -b \pm \sqrt{b^2 - 4ac} \over 2a }$$ 
+</code></pre>
+<p>renders like this:</p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>x</mi><mo>=</mo><mrow><mfrac><mrow><mo>−</mo><mi>b</mi><mo>±</mo><msqrt><mrow><msup><mi>b</mi><mn>2</mn></msup><mo>−</mo><mn>4</mn><mi>a</mi><mi>c</mi></mrow></msqrt></mrow><mrow><mn>2</mn><mi>a</mi></mrow></mfrac></mrow></mrow><annotation encoding="application/x-tex">x = { -b \pm \sqrt{b^2 - 4ac} \over 2a }
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:1.590389em;"></span><span class="strut bottom" style="height:2.276389em;vertical-align:-0.686em;"></span><span class="base displaystyle textstyle uncramped"><span class="mord mathit">x</span><span class="mrel">=</span><span class="mord displaystyle textstyle uncramped"><span class="mord reset-textstyle displaystyle textstyle uncramped"><span class="sizing reset-size5 size5 reset-textstyle textstyle uncramped nulldelimiter"></span><span class="mfrac"><span class="vlist"><span style="top:0.686em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:1em;">​</span></span><span class="reset-textstyle textstyle cramped"><span class="mord textstyle cramped"><span class="mord mathrm">2</span><span class="mord mathit">a</span></span></span></span><span style="top:-0.22999999999999998em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:1em;">​</span></span><span class="reset-textstyle textstyle uncramped frac-line"></span></span><span style="top:-0.677em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:1em;">​</span></span><span class="reset-textstyle textstyle uncramped"><span class="mord textstyle uncramped"><span class="mord">−</span><span class="mord mathit">b</span><span class="mbin">±</span><span class="sqrt mord"><span class="sqrt-sign" style="top:-0.07338899999999993em;"><span class="style-wrap reset-textstyle textstyle uncramped">√</span></span><span class="vlist"><span style="top:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:1em;">​</span></span><span class="mord textstyle cramped"><span class="mord"><span class="mord mathit">b</span><span class="vlist"><span style="top:-0.289em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord mathrm">2</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mbin">−</span><span class="mord mathrm">4</span><span class="mord mathit">a</span><span class="mord mathit">c</span></span></span><span style="top:-0.8333889999999999em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:1em;">​</span></span><span class="reset-textstyle textstyle uncramped sqrt-line"></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:1em;">​</span></span>​</span></span></span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:1em;">​</span></span>​</span></span></span><span class="sizing reset-size5 size5 reset-textstyle textstyle uncramped nulldelimiter"></span></span></span></span></span></span></span></p>
+<pre class="syntaxhighlight"><code>    <span id="3190" data-toggle="tooltip" data-title="boolean">useMath</span><span class="punctuation">:</span> <span class="keyword">boolean</span>
+</code></pre>
+<h3 id="customizing-menu-headers">Customizing Menu Headers</h3>
+<p>You can change the text in the menu headers, if you don't like the
+defaults, or if you want to localize them.</p>
+<pre class="syntaxhighlight"><code>    <span id="3776" data-toggle="tooltip" data-title="string">tocMenuHeader</span><span class="punctuation">:</span> <span class="keyword">string</span>
+    <span id="3995" data-toggle="tooltip" data-title="string">pageMenuHeader</span><span class="punctuation">:</span> <span class="keyword">string</span>
+</code></pre>
+<h3 id="footer">Footer</h3>
+<p>The best place for copyright and other general information is the footer.
+You can show it in page menu, content area, or TOC menu.</p>
+<pre class="syntaxhighlight"><code>    <span id="4023" data-toggle="tooltip" data-title="string">footer</span><span class="punctuation">:</span> <span class="keyword">string</span>
+    <span id="4237" data-toggle="tooltip" data-title="&quot;page-menu&quot; | &quot;content-area&quot; | &quot;toc-menu&quot;">footerLocation</span><span class="punctuation">:</span> <span class="string">&#039;page-menu&#039;</span> <span class="punctuation">|</span> <span class="string">&#039;content-area&#039;</span> <span class="punctuation">|</span> <span class="string">&#039;toc-menu&#039;</span>
+</code></pre>
+<h3 id="customizing-theme">Customizing Theme</h3>
+<p>The path to the user-specified theme overrides. The path is relative
+to the project directory.</p>
+<pre class="syntaxhighlight"><code>    <span id="4300" data-toggle="tooltip" data-title="string">userTheme</span><span class="punctuation">:</span> <span class="keyword">string</span>
+<span class="punctuation">}</span>
+</code></pre>
+<h2 id="defaults">Defaults</h2>
+<p>Default values are defined here. These are used, if a property is not present
+in the configuration file.</p>
+<pre class="syntaxhighlight"><code><span class="keyword">export</span> <span class="keyword">const</span> <span id="4751" data-toggle="tooltip" data-title="DefaultFrontMatter">defaults</span><span class="punctuation">:</span> <a href="/src/front-matter.html#1297"><span class="typename" data-toggle="tooltip" data-title="DefaultFrontMatter">DefaultFrontMatter</span></a> <span class="punctuation">=</span> <span class="punctuation">{</span>
+    <span id="4784" data-toggle="tooltip" data-title="undefined[]">visualizers</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="punctuation">]</span><span class="punctuation">,</span>
+    <span id="4806" data-toggle="tooltip" data-title="&quot;normalpage&quot;">template</span><span class="punctuation">:</span> <span class="string">&quot;normalpage&quot;</span><span class="punctuation">,</span>
+    <span id="4835" data-toggle="tooltip" data-title="string">projectName</span><span class="punctuation">:</span> <span class="string">&quot;Project&quot;</span><span class="punctuation">,</span>
+    <span id="4864" data-toggle="tooltip" data-title="string">repository</span><span class="punctuation">:</span> <span class="string">&quot;https://github.com/user/repo&quot;</span><span class="punctuation">,</span>
+    <span id="4913" data-toggle="tooltip" data-title="string">download</span><span class="punctuation">:</span> <span class="string">&quot;&quot;</span><span class="punctuation">,</span>
+    <span id="4932" data-toggle="tooltip" data-title="string">license</span><span class="punctuation">:</span> <span class="string">&quot;/License.html&quot;</span><span class="punctuation">,</span>
+    <span id="4963" data-toggle="tooltip" data-title="string">logo</span><span class="punctuation">:</span> <span class="string">&quot;&quot;</span><span class="punctuation">,</span>
+    <span id="4978" data-toggle="tooltip" data-title="&quot;monokai&quot;">syntaxHighlight</span><span class="punctuation">:</span> <span class="string">&quot;monokai&quot;</span><span class="punctuation">,</span>
+    <span id="5011" data-toggle="tooltip" data-title="false">useMath</span><span class="punctuation">:</span> <span class="keyword">false</span><span class="punctuation">,</span>
+    <span id="5032" data-toggle="tooltip" data-title="string">tocMenuHeader</span><span class="punctuation">:</span> <span class="string">&quot;Table of Contents&quot;</span><span class="punctuation">,</span>
+    <span id="5073" data-toggle="tooltip" data-title="string">pageMenuHeader</span><span class="punctuation">:</span> <span class="string">&quot;On This Page&quot;</span><span class="punctuation">,</span>
+    <span id="5110" data-toggle="tooltip" data-title="string">footer</span><span class="punctuation">:</span> <span class="string">&quot;Copyright © 2019&quot;</span><span class="punctuation">,</span>
+    <span id="5143" data-toggle="tooltip" data-title="&quot;page-menu&quot;">footerLocation</span><span class="punctuation">:</span> <span class="string">&quot;page-menu&quot;</span><span class="punctuation">,</span>
+    <span id="5177" data-toggle="tooltip" data-title="string">userTheme</span><span class="punctuation">:</span> <a href="/src/front-matter.html#486"><span data-toggle="tooltip" data-title="typeof path">path</span></a><span class="punctuation">.</span><span class="member" data-toggle="tooltip" data-title="(...pathSegments: string[]) =&gt; string">resolve</span><span class="punctuation">(</span><span data-toggle="tooltip" data-title="string">__dirname</span><span class="punctuation">,</span> `../../components/user-theme.less`<span class="punctuation">)</span>
+<span class="punctuation">}</span>
+</code></pre>
+
+        
+    </div>
+            <div class="stickypane">
+                
+    <div class="pagemenu">
+        <h3>On This Page</h3>
+            <ul class="pagetree">
+                
+            </ul>
+    </div>
+                
+            </div>
+        </div>
+    </div>
+    <script src="/js/main.js"></script>
+    
+</body>
+</html>

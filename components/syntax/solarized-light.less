@@ -1,0 +1,44 @@
+﻿@import "syntax-base.less";
+
+pre.syntaxhighlight {
+	color: #657b83;
+	background: #fdf6e3;
+    .code-block();
+
+    @{punctuation} {
+	    color: #719a07;
+    }
+    @{keyword} {
+	    color: #859900;
+    }
+    @{comment} {
+	    color: #93a1a1;
+    }
+    @{member} {
+	    color: #cb4b16;
+    }
+    @{string} {
+	    color: #2aa198;
+    }
+    @{number} {
+	    color: #2aa14e;
+    }
+    @{typename} {
+	    color: #b58900;
+        font-weight: bolder;
+    }
+    a { 
+        color: inherit;
+        &:visited { 
+            color: inherit;
+        }
+        &:hover span {
+            color: blue;
+            text-decoration: underline;
+        }
+        &:active span {
+            color: blueviolet;
+            text-decoration: underline;
+        }
+    }
+}

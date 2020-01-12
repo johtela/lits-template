@@ -1,0 +1,30 @@
+﻿@code-tab-size: 4;
+
+.code-block() {
+	-moz-tab-size: @code-tab-size;
+	-o-tab-size: @code-tab-size;
+	tab-size: @code-tab-size;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	overflow-x: auto;
+    overflow-y: hidden;
+}
+.tooltip-inner {
+    max-width: 1000px;
+}
+
+@punctuation: ~'.punctuation';
+@keyword: ~'.keyword, .attribute, .attr';
+@comment: ~'.comment';
+@member: ~'.member, .selector-class';
+@string: ~'.string';
+@number: ~'.number, .literal';
+@typename: ~'.typename, .variable';

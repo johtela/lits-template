@@ -1,0 +1,7 @@
+.vscode/
+components
+src
+docs
+litsconfig.json
+tsconfig.json
+lib/test

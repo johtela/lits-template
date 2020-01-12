@@ -1,0 +1,32 @@
+[
+    {
+        "page": "LiTScript Templates",
+        "file": "index.html",
+        "desc": ""
+    },
+    {
+        "page": "Template API",
+        "file": "src/template.html",
+        "desc": ""
+    },
+    {
+        "page": "Front Matter",
+        "file": "src/front-matter.html",
+        "desc": ""
+    },
+    {
+        "page": "Table of Contents",
+        "file": "src/toc.html",
+        "desc": ""
+    },
+    {
+        "page": "Theming Guide",
+        "file": "components/common/theme.html",
+        "desc": ""
+    },
+    {
+        "page": "License",
+        "file": "license.html",
+        "desc": ""
+    }
+]

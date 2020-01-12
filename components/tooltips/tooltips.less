@@ -1,0 +1,29 @@
+@import "../common/theme.less";
+
+@shadow-color: desaturate(@tooltip-border-color, 80%);
+
+.tippy-tooltip.custom-theme {
+    background-color: @tooltip-bg-color;
+    color: @tooltip-color;
+    border: 1px solid @tooltip-border-color;
+  }
+  
+  .tippy-tooltip.custom-theme[data-animatefill] {
+    background-color: transparent;
+  }
+  
+  .tippy-tooltip.custom-theme .tippy-backdrop {
+    background-color: @tooltip-bg-color;
+  }
+  .tippy-tooltip.custom-theme[x-placement^='top'] .tippy-arrow {
+    border-top-color: @tooltip-bg-color;
+  }
+  .tippy-tooltip.custom-theme[x-placement^='bottom'] .tippy-arrow {
+    border-bottom-color: @tooltip-bg-color;
+  }
+  .tippy-tooltip.custom-theme[x-placement^='left'] .tippy-arrow {
+    border-left-color: @tooltip-bg-color;
+  }
+  .tippy-tooltip.custom-theme[x-placement^='right'] .tippy-arrow {
+    border-right-color: @tooltip-bg-color;
+  }

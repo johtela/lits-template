@@ -1,0 +1,46 @@
+{
+    "src/toc": {
+        "url": "/src/toc.html",
+        "dependencies": [
+            "fs"
+        ]
+    },
+    "fs": {
+        "dependencies": []
+    },
+    "src/front-matter": {
+        "url": "/src/front-matter.html",
+        "dependencies": [
+            "path"
+        ]
+    },
+    "path": {
+        "dependencies": []
+    },
+    "src/template": {
+        "url": "/src/template.html",
+        "dependencies": [
+            "path",
+            "src/toc",
+            "src/front-matter",
+            "components/common/template",
+            "components/page-temp",
+            "components/landing-temp"
+        ]
+    },
+    "components/common/template": {
+        "dependencies": []
+    },
+    "components/page-temp": {
+        "dependencies": []
+    },
+    "components/landing-temp": {
+        "dependencies": []
+    },
+    "index": {
+        "url": "/index.html",
+        "dependencies": [
+            "src/template"
+        ]
+    }
+}
