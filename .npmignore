@@ -1,6 +1,6 @@
 .vscode/
-components
-src
+/components
+/src
 docs
 litsconfig.json
 tsconfig.json
