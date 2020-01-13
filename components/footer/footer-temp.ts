@@ -5,7 +5,7 @@ export default (fm: DefaultFrontMatter) => html`
     <div class="footer">
         ${fm.footer}
         <div class="ad">
-            Created with <a href="https://github.com/johtela/literatets">LiTScript</a>
+            Created with <a href="https://github.com/johtela/litscript">LiTScript</a>
         </div>
     </div>
 `

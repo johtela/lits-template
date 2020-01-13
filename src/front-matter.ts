@@ -151,7 +151,7 @@ export const defaults: DefaultFrontMatter = {
     projectName: "Project",
     repository: "https://github.com/user/repo",
     download: "",
-    license: "/License.html",
+    license: "license.html",
     logo: "",
     syntaxHighlight: "monokai",
     useMath: false,

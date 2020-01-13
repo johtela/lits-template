@@ -1,5 +1,5 @@
 import { html } from '../../components/common/template'
-import { Toc, TocEntry } from '../../src/toc'
+import { Toc, TocEntry, relLink } from '../../src/toc'
 import { DefaultFrontMatter } from '../../src/front-matter';
 
 const tocTitle = (entry: TocEntry) =>
@@ -11,7 +11,10 @@ const tocEntry = (entry: TocEntry, relFileName: string) => html`
     <li>
         ${entry.subs ? '<button class="accordion">' : ''}
         ${entry.file ? 
-            `<a href="/${entry.file}"${relFileName == entry.file ? ' class="highlight"' : ''}>${tocTitle(entry)} </a>` :
+            `<a href="${relLink(relFileName, entry.file)}"${
+                relFileName == entry.file ? 
+                    ' class="highlight"' : ''
+                }>${tocTitle(entry)}</a>` :
             entry.page}
         ${entry.subs ? 
             html`</button>

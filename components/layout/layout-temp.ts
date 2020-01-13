@@ -18,7 +18,8 @@ export default (fm: DefaultFrontMatter, toc: Toc, contents: string,
             ${hamburger}
         </div>
         <div class="scrollingarea closepopups">
-            ${contentarea(contents, fm.footerLocation == 'content-area' ? footer(fm) : html``)}
+            ${contentarea(contents, 
+                fm.footerLocation == 'content-area' ? footer(fm) : html``)}
             <div class="stickypane">
                 ${pagemenu(fm)}
                 ${fm.footerLocation == 'page-menu' ? footer(fm) : ""}
