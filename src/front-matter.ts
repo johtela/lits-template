@@ -99,7 +99,8 @@ export interface DefaultFrontMatter extends FrontMatter {
      * ### Math Notation
      * 
      * LiTScript uses [KaTeX][] to layout mathematical formulas. By turning the 
-     * `useMath` field on, KaTeX is loaded from an external CDN.
+     * `useMath` field on, KaTeX is loaded from an external CDN. If you need a 
+     * different version of CDN package, change the link in `katexCdn`.
      * 
      * You can include formulas in markdown with [LaTeX][] notation by 
      * surrounding them by single `$` (inline) or double `$$` (block) dollar 
@@ -112,6 +113,7 @@ export interface DefaultFrontMatter extends FrontMatter {
      * $$x = { -b \pm \sqrt{b^2 - 4ac} \over 2a }$$
      */
     useMath: boolean
+    katexCdn: string
     /**
      * ### Customizing Menu Headers
      * 
@@ -155,6 +157,7 @@ export const defaults: DefaultFrontMatter = {
     logo: "",
     syntaxHighlight: "monokai",
     useMath: false,
+    katexCdn: "https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.css",
     tocMenuHeader: "Table of Contents",
     pageMenuHeader: "On This Page",
     footer: "Copyright © 2019",
