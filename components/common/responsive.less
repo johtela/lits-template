@@ -55,6 +55,21 @@
     }
 }
 
+.set-horiz-padding(@align, @value) {
+    & when (@align=left) {
+        padding-left: @value;
+    }
+    & when (@align=right) {
+        padding-right: @value;
+    }
+}
+
+.set-horiz-padding-resp(@align, @breakpoint, @value) {
+    @media @breakpoint {
+        .set-horiz-padding(@align, @value);
+    }
+}
+
 .set-width-resp(@breakpoint, @value){
     @media @breakpoint {
         width: @value;
@@ -71,4 +86,15 @@
     @media @breakpoint {
         display: block;
     }
+}
+
+.thin-scrollbars {
+    &::-webkit-scrollbar {
+        height: @toc-scrollbar-width;
+        background: transparent;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: @toc-scrollbar-color;
+    }
+    scrollbar-width: thin;
 }

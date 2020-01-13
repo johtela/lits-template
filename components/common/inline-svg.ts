@@ -6,6 +6,14 @@ export function svg(fileName: string): string {
 } 
 
 export function fa(iconPath: string): string {
-    return svg(path.resolve(__dirname,
-        '../../../../@fortawesome/fontawesome-free/svgs/', iconPath + '.svg'))
+    let fapaths = [
+        '../../../../@fortawesome/fontawesome-free/svgs/',
+        '../../../node_modules/@fortawesome/fontawesome-free/svgs/'
+    ]
+    let fapath = fapaths
+        .map(p => path.resolve(__dirname, p))
+        .find(fs.existsSync)
+    if (!fapath)
+        throw("Cannot find Font Awesome npm directory")
+    return svg(path.resolve(fapath, iconPath + '.svg'))
 }

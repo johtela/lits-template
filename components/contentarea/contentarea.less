@@ -10,6 +10,8 @@
     font-size: @cnt-font-size;
     background-color: @cnt-bg-color;
     padding: 0 40px;
+    .set-horiz-padding-resp(left, @tablet, 8px);
+    .set-horiz-padding-resp(right, @tablet, 8px);
     color: @cnt-color;
     line-height: 1.6em;
 
@@ -135,14 +137,7 @@
         border-radius: @radius;
         overflow-x: auto;
         overflow-y: hidden;
-        &::-webkit-scrollbar {
-            height: @toc-scrollbar-width;
-            background: transparent;
-        }
-        &::-webkit-scrollbar-thumb {
-            background: @toc-scrollbar-color;
-        }
-        scrollbar-width: thin;
+        .thin-scrollbars();
         &.console {
             &:before {
                 content: '> ';
