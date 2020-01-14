@@ -2,6 +2,5 @@
 /src
 docs
 litsconfig.json
-tsconfig.json
 lib/test
 tsconfig.tsbuildinfo
