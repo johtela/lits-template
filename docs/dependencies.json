@@ -1,24 +1,25 @@
 {
     "src/toc": {
-        "url": "/src/toc.html",
+        "url": "src/toc.html",
         "dependencies": [
-            "fs"
+            "fs",
+            "path"
         ]
     },
     "fs": {
         "dependencies": []
     },
+    "path": {
+        "dependencies": []
+    },
     "src/front-matter": {
-        "url": "/src/front-matter.html",
+        "url": "src/front-matter.html",
         "dependencies": [
             "path"
         ]
     },
-    "path": {
-        "dependencies": []
-    },
     "src/template": {
-        "url": "/src/template.html",
+        "url": "src/template.html",
         "dependencies": [
             "path",
             "src/toc",
@@ -38,7 +39,7 @@
         "dependencies": []
     },
     "index": {
-        "url": "/index.html",
+        "url": "index.html",
         "dependencies": [
             "src/template"
         ]
