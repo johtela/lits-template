@@ -1,4 +1,4 @@
-# Default HTML Template for LiTScript
+# Default HTML Template for [LiTScript][]
 
  This package contains the APIs needed to implement LiTScript templates as 
  well as the default template that is included out-of-the-box. Templates 
@@ -18,6 +18,7 @@
  You can utilize the simple templating framework provided by the package to 
  create new templates or use whatever technology you like. 
  
+ [LiTScript]: https://johtela.github.io/litscript
  [Less]: http://lesscss.org/
  [CommonJS modules]: https://www.typescriptlang.org/docs/handbook/modules.html
  
