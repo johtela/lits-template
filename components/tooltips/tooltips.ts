@@ -10,6 +10,7 @@ document.querySelectorAll('[data-toggle="tooltip"]').forEach(elem => {
         arrow: true,
         theme: 'custom',
         boundary: "window",
-        delay: 500
+        delay: 500,
+        allowHTML: false
     })
 })
