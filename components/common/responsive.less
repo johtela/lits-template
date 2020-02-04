@@ -90,7 +90,12 @@
 
 .thin-scrollbars {
     &::-webkit-scrollbar {
-        height: @toc-scrollbar-width;
+        &:horizontal {
+            height: @toc-scrollbar-width;
+        }
+        &:vertical {
+            width: @toc-scrollbar-width;
+        }
         background: transparent;
     }
     &::-webkit-scrollbar-thumb {

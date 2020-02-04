@@ -251,15 +251,14 @@
         padding: 0px 8px;
         border: #AAA dashed 1px;
         border-radius: @radius;
+        max-height: 2em;
+        overflow: auto;
+        .thin-scrollbars();
+        transition: 2s;
     }
-    details[open] summary ~ * {
-        animation: fade-in 1s ease-in-out;
+    details[open] {
+        max-height: 95vh;
     }
-      
-    @keyframes fade-in {
-        0%    { opacity: 0; }
-        100%  { opacity: 1; }
-    } 
 
     .alert(@bgColor, @textColor, @icon) {
         font-family: @sans-font;
