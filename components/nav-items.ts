@@ -8,14 +8,16 @@ export function* navItems(fm: DefaultFrontMatter, toc: Toc, relFileName: string)
     yield { 
         link: relLink(relFileName, 'index.html'), 
         caption: fm.projectName, 
-        icon: relLink(relFileName, fm.logo) || "", 
+        icon: fm.logo ? relLink(relFileName, fm.logo) : "", 
         title: true 
     }
     if (fm.download)
         yield { 
             link: relLink(relFileName, fm.download), 
             caption: 'Download', 
-            icon: fa('brands/npm') 
+            icon: fm.download.includes("npmjs.com") ? 
+                fa('brands/npm') :
+                fa('solid/cloud-download-alt')
         }
     yield { 
         link: relLink(relFileName, fm.repository), 
