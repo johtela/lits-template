@@ -41,6 +41,8 @@
     "index": {
         "url": "index.html",
         "dependencies": [
+            "src/toc",
+            "src/front-matter",
             "src/template"
         ]
     }
