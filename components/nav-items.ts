@@ -8,7 +8,9 @@ export function* navItems(fm: DefaultFrontMatter, toc: Toc, relFileName: string)
     yield { 
         link: relLink(relFileName, 'index.html'), 
         caption: fm.projectName, 
-        icon: fm.logo ? relLink(relFileName, fm.logo) : "", 
+        icon: fm.logo ? 
+            (fm.logo.startsWith('<') ? fm.logo : relLink(relFileName, fm.logo)) : 
+            "", 
         title: true 
     }
     if (fm.download)
