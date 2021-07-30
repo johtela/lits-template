@@ -48,7 +48,14 @@
         background: transparent;
     }
     &::-webkit-scrollbar-thumb {
-        background: @toc-scrollbar-color;
+        background: transparent;
+    }
+    scrollbar-color: transparent transparent;
+    &:hover {
+        &::-webkit-scrollbar-thumb {
+            background: @toc-scrollbar-color;
+        }
+        scrollbar-color: @toc-scrollbar-color transparent;
     }
     scrollbar-width: thin;
 }
