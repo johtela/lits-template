@@ -157,10 +157,10 @@ export const defaults: DefaultFrontMatter = {
     logo: "",
     syntaxHighlight: "monokai",
     useMath: false,
-    katexCdn: "https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.css",
+    katexCdn: "https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css",
     tocMenuHeader: "Table of Contents",
     pageMenuHeader: "On This Page",
-    footer: "Copyright © 2019",
+    footer: "Copyright © 2021",
     footerLocation: "page-menu",
     userTheme: path.resolve(__dirname, `../../components/user-theme.less`)
 }
