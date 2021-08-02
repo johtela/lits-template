@@ -1,29 +1,40 @@
 @import "../common/theme.less";
 
-@shadow-color: desaturate(@tooltip-border-color, 80%);
+@font: var(--sans-font);
+@arrow-size: 4px;
+@arrow-border-size: @arrow-size + 1px;
 
-.tippy-tooltip.custom-theme {
-    background-color: @tooltip-bg-color;
-    color: @tooltip-color;
-    border: 1px solid @tooltip-border-color;
+#tooltip {
+  position: absolute;
+  padding: 4px;
+  z-index: 9999;
+  font-family: @font;
+  font-size: 14px;
+  background-color: @tooltip-bg-color;
+  border-radius: 4px;
+  color: @tooltip-color;
+  border: 1px solid @tooltip-border-color;
+  opacity: 0%;
+  transform: translate(-4px, -110%);
+  transition: opacity 0.5s;
+  &:after, &:before {
+    top: 100%;
+    left: 25%;
+    border: solid transparent;
+    content: "";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
   }
-  
-  .tippy-tooltip.custom-theme[data-animatefill] {
-    background-color: transparent;
-  }
-  
-  .tippy-tooltip.custom-theme .tippy-backdrop {
-    background-color: @tooltip-bg-color;
-  }
-  .tippy-tooltip.custom-theme[x-placement^='top'] .tippy-arrow {
+  &:after {
     border-top-color: @tooltip-bg-color;
+    border-width: @arrow-size;
+    margin-left: (-@arrow-size);
   }
-  .tippy-tooltip.custom-theme[x-placement^='bottom'] .tippy-arrow {
-    border-bottom-color: @tooltip-bg-color;
+  &:before {
+    border-top-color: @tooltip-border-color;
+    border-width: @arrow-border-size;
+    margin-left: (-@arrow-border-size);
   }
-  .tippy-tooltip.custom-theme[x-placement^='left'] .tippy-arrow {
-    border-left-color: @tooltip-bg-color;
-  }
-  .tippy-tooltip.custom-theme[x-placement^='right'] .tippy-arrow {
-    border-right-color: @tooltip-bg-color;
-  }
+}

@@ -16,8 +16,7 @@
   "author": "Tommi Johtela",
   "license": "MPL-2.0",
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.15.3",
-    "tippy.js": "^4.3.5"
+    "@fortawesome/fontawesome-free": "^5.15.3"
   },
   "devDependencies": {
     "@types/css-font-loading-module": "0.0.2",
