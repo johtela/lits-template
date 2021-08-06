@@ -40,7 +40,7 @@ export function loadToc(tocFile: string): Toc {
     if (!fs.existsSync(tocFile))
         return [];
     try {
-        return JSON.parse(fs.readFileSync(tocFile, ''))
+        return JSON.parse(fs.readFileSync(tocFile, 'utf-8'))
     }
     catch (e) {
         throw e instanceof SyntaxError ?
