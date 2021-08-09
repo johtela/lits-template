@@ -19,7 +19,7 @@ function showTooltip(elem: HTMLElement, contents?: string) {
     let tt = $.create('legend')
     document.body.appendChild(tt)
     tt.id = id
-    tt.innerHTML = contents
+    tt.innerHTML = contents.replace(/=>/g, "⇒")
     let bb = elem.getBoundingClientRect()
     tt.style.left = `${Math.round(bb.left) + window.scrollX}px`
     tt.style.top = `${Math.round(bb.top) + window.scrollY}px`
