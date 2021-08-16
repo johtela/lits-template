@@ -29,6 +29,7 @@ function setNavbarOffset(dockedTop: boolean, offs: number) {
             navbar.style.top = `${offs}px`;
         else
             navbar.style.bottom = `${offs}px`;
+        navbar.style.opacity = hidden ? "0" : "1";
     }
 }
 
