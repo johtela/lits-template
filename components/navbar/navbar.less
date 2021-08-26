@@ -55,11 +55,14 @@
                 background: @nav-hl-background;
             }
             &:active {
-                // Depress text when link is clicked
-                position: relative;
-                left: @shadow-offset-x / 2;
-                top: @shadow-offset-y / 2;
-                box-shadow: (@shadow-offset-x / 2) (@shadow-offset-y / 2) @nav-shadow-size @shadow-color;
+                box-shadow: @shadow-offset-x (@shadow-offset-y * 2) 
+                    @nav-shadow-size @shadow-color;
+                & when (@nav-align=top) {
+                    transform: scale(1.1) translateY(-10%);
+                }
+                & when (@nav-align=bottom) {
+                    transform: scale(1.1) translateY(10%);
+                }
             }
         }
         svg, img {
