@@ -67,6 +67,14 @@ export interface Template {
      * Aliases needed by the template (see above) are returned by this method.
      */
     pathAliases(fm: fm.FrontMatter): Aliases
+    /**
+     * ### Copy Auxiliary Files
+     * 
+     * Any fonts, images, etc. needed by the template can be copied to the 
+     * output directory of LiTScript by implementing the following function.
+     * The function gets the base directory of the web site as an argument,
+     */
+    copyAuxiliaryFiles(fullBasePath: string): void
 }
 /**
  * ## The Default Template
@@ -126,5 +134,11 @@ export const template: Template = {
                     `../../components/syntax/${fm.syntaxHighlight}.less`),
             userTheme: path.resolve(fm.userTheme)
         }
-    }
+    },
+    /**
+     * ### Auxiliary Files
+     * 
+     * The default template does not need any auxiliary files.
+     */
+     copyAuxiliaryFiles(fullBasePath: string): void { }
 }
